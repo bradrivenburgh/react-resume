@@ -2,10 +2,16 @@
 
 const appRoot = document.querySelector('#application-root');
 
+function App(props) {
+    return (
+    <header>
+        {props.children}
+    </header>
+    );
+}
+
 ReactDOM.render(
-    <div>
-        <h1>Hello, world!</h1>
-        <p>How are you today?</p>
-        <h2>Look what React can do!</h2>
-    </div>
-    , appRoot);
+    <App className='my-class'>
+        <div><h1><span>Current Page Title!</span></h1></div>
+    </App>,
+    appRoot);
