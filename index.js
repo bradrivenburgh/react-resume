@@ -1,5 +1,11 @@
 'use strict'
 
 const appRoot = document.querySelector('#application-root');
-const helloWorldH1 = <h1>Hello, world</h1>;
-ReactDOM.render(helloWorldH1, appRoot);
+
+ReactDOM.render(
+    <div>
+        <h1>Hello, world!</h1>
+        <p>How are you today?</p>
+        <h2>Look what React can do!</h2>
+    </div>
+    , appRoot);
